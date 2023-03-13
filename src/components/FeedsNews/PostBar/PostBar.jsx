@@ -1,18 +1,23 @@
-import { Avatar, Box, Card, Grid, Stack } from '@mui/material'
+import { Avatar, Box,  Grid, Stack } from '@mui/material'
 import React from 'react'
 import TextField from '@mui/material/TextField'
 import Button from '@mui/material/Button'
 import PhotoLibraryIcon from '@mui/icons-material/PhotoLibrary'
 import MoodIcon from '@mui/icons-material/Mood'
-import LocalOfferIcon from '@mui/icons-material/LocalOffer'
+
 import InputAdornment from '@mui/material/InputAdornment'
 import SearchRounded from '@mui/icons-material/SearchRounded'
+
+import LiveVideo from './LiveVideo/LiveVideo'
+
+import FeelingActivat from './FeelingActivate/FeelingActivat'
+import PhotoVideo from './PhotoVideo/PhotoVideo'
 const PostBar = () => {
   return (
     <Box
       Container
       sx={{
-        // backgroundColor: '#131313',
+     
 
         margin: 5,
       }}
@@ -40,13 +45,15 @@ const PostBar = () => {
         <TextField
           id="outlined-basic"
           variant="outlined"
-          placeholder="Search "
+          placeholder="What's your mind? "
           InputProps={{
             startAdornment: (
               <InputAdornment position="start">
                 <SearchRounded sx={{ my: 0.5 }} />
               </InputAdornment>
+              
             ),
+            
           }}
           sx={{
             width: '80%',
@@ -56,21 +63,23 @@ const PostBar = () => {
               height: '29px',
             },
           }}
+          
+          
         />
         <Button variant="outlined" style={{ height: '60px', width: 80 }}>
           Post
         </Button>
       </Grid>
-      <Stack direction="row" spacing={6}>
+      <Stack direction="row" spacing={8}>
         <Button variant="" startIcon={<PhotoLibraryIcon />}>
-          Photo
+          <PhotoVideo/>
         </Button>
         <Button variant="" startIcon={<MoodIcon />}>
-          Feeling/Activity
-        </Button>{' '}
-        <Button variant="" startIcon={<LocalOfferIcon />}>
-          Tag
+        <FeelingActivat/>
         </Button>
+    
+         <LiveVideo/>
+      
       </Stack>
     </Box>
   )

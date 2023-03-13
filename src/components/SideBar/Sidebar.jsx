@@ -34,7 +34,7 @@ const Sidebar = ({ mode, setMode }) => {
       <Box position="absolute">
         <List>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#home">
+            <ListItemButton component="a" href="/">
               <ListItemIcon>
                 <Newspaper />
               </ListItemIcon>
@@ -42,7 +42,7 @@ const Sidebar = ({ mode, setMode }) => {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
+            <ListItemButton component="a" href="/people">
               <ListItemIcon>
                 <People />
               </ListItemIcon>
@@ -50,7 +50,7 @@ const Sidebar = ({ mode, setMode }) => {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
+            <ListItemButton component="a" href="/EGmeet">
               <ListItemIcon>
                 <VideoCameraBack />
               </ListItemIcon>
@@ -58,7 +58,7 @@ const Sidebar = ({ mode, setMode }) => {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
+            <ListItemButton component="a" href="/video">
               <ListItemIcon>
                 <SlowMotionVideo />
               </ListItemIcon>
@@ -66,7 +66,7 @@ const Sidebar = ({ mode, setMode }) => {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
+            <ListItemButton component="a" href="/groups">
               <ListItemIcon>
                 <Groups />
               </ListItemIcon>
@@ -74,7 +74,7 @@ const Sidebar = ({ mode, setMode }) => {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
+            <ListItemButton component="a" href="/photo">
               <ListItemIcon>
                 <InsertPhoto />
               </ListItemIcon>
@@ -82,7 +82,7 @@ const Sidebar = ({ mode, setMode }) => {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
+            <ListItemButton component="a" href="/podcast">
               <ListItemIcon>
                 <Podcasts />
               </ListItemIcon>
@@ -90,7 +90,7 @@ const Sidebar = ({ mode, setMode }) => {
             </ListItemButton>
           </ListItem>
           <ListItem disablePadding>
-            <ListItemButton component="a" href="#simple-list">
+            <ListItemButton component="a" href="#simple">
               <ListItemIcon>
                 <School />
               </ListItemIcon>

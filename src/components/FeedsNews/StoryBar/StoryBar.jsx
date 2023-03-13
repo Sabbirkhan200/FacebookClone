@@ -16,7 +16,7 @@ const StoryBar = () => {
               alt={item.title}
               loading="lazy"
             />
-            <Avatar alt="Remy Sharp" variant="rounded" src="pic/Sabbir-1.jpg" />
+            {/* <Avatar alt="Remy Sharp" variant="rounded" src="pic/Sabbir-1.jpg" /> */}
           </ImageListItem>
         ))}
       </ImageList>

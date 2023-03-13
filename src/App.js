@@ -3,8 +3,9 @@ import Feed from './components/FeedsNews/Feed'
 import Rightbar from './components/LeftBar/Rightbar'
 import { Box, createTheme, Stack, ThemeProvider } from '@mui/material'
 import Navbar from './components/Navbar/Navbar'
-import Add from './components/Add'
+
 import { useState } from 'react'
+import Layout from './Routes/Layout'
 
 function App() {
   const [mode, setMode] = useState('light')
@@ -21,10 +22,13 @@ function App() {
         <Stack direction="row" spacing={2} justifyContent="space-between">
           <Sidebar setMode={setMode} mode={mode} />
 
-          <Feed />
+         <Layout/>
+
+          {/* <Feed /> */}
+
           <Rightbar />
         </Stack>
-        <Add />
+   
       </Box>
     </ThemeProvider>
   )

@@ -6,7 +6,7 @@ import ChatFriends from './ChatFriends'
 const Rightbar = () => {
   return (
     <Box flex={2} sx={{ display: { xs: 'none', sm: 'block' } }}>
-      <Box position="absolute" width={400}>
+      <Box position="absolute" width={270}>
         <Typography variant="h6" fontWeight={100}>
           <Switch />
           Online Friends

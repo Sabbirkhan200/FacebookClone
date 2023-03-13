@@ -1,8 +1,8 @@
 import {
   Home,
   Logout,
-  Mail,
-  Notifications,
+ 
+ 
   People,
   PersonAdd,
   Settings,
@@ -11,7 +11,7 @@ import {
 import {
   AppBar,
   Avatar,
-  Badge,
+
   Box,
   Divider,
   InputBase,
@@ -23,6 +23,10 @@ import {
   Typography,
 } from '@mui/material'
 import React, { useState } from 'react'
+import Marketplace from './Marketplace/Marketplace'
+import Message from './Message/Message'
+import Notification from './Notification/Notification'
+import PeoplePost from './People/People'
 
 const StyledToolbar = styled(Toolbar)({
   display: 'flex',
@@ -56,7 +60,7 @@ const UserBox = styled(Box)(({ theme }) => ({
 const Navbar = () => {
   const [open, setOpen] = useState(false)
   return (
-    <AppBar position="sticky" style={{ backgroundColor: 'black' }}>
+    <AppBar position="sticky" style={{ color:'white',backgroundColor:'black'}}>
       <StyledToolbar>
         <Typography variant="h6" sx={{ display: { xs: 'none', sm: 'block' } }}>
           <img src="pic/logo _2-05.png" />
@@ -67,22 +71,21 @@ const Navbar = () => {
         </Typography>
 
         <Search>
-          <InputBase placeholder="search..." />
+          <InputBase placeholder="Search..." />
         </Search>
 
         <Icons>
-          <Home />
+        
+          <Home   />
 
-          <People />
+          <PeoplePost />
 
-          <ShoppingCart />
+          <Marketplace />
 
-          <Badge badgeContent={2} color="error">
-            <Notifications />
-          </Badge>
-          <Badge badgeContent={3} color="error">
-            <Mail />
-          </Badge>
+       
+           <Notification/>
+      
+       <Message/>
 
           <Avatar
             sx={{ width: 30, height: 30 }}
